@@ -1,6 +1,6 @@
 # Lumiere Snap
 
-_Photographqy Portfolio_
+_Photography Portfolio_
 
 ### Techstacks
 
