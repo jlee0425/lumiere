@@ -6,24 +6,24 @@ import { RiKakaoTalkLine } from 'react-icons/Ri';
 
 export const NAV_MENU = [
 	{
-		title: 'Home',
+		title: 'HOME',
 		to: '/',
-		icon: GoHome,
 	},
 	{
-		title: 'Gallery',
+		title: 'GALLERY',
 		to: '/gallery',
-		icon: GrGallery,
 	},
 	{
-		title: 'Product',
+		title: 'PRODUCT',
 		to: '/product',
-		icon: BsCamera,
 	},
+];
+
+export const SOCIAL_MEDIA = [
 	{
 		title: 'Instagram',
 		to: 'https://www.instagram.com/youn_changmin',
-		icon: FiInstagram,
+		// icon: <FiInstagram />,
 	},
 	{
 		title: 'Contact',

@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
+import HamburgerMenu from '../components/Layout/HamburgerMenu';
 
 const Home: NextPage = () => {
-	return <h1>창론암아</h1>;
+	return <div />;
 };
 
 export default Home;
