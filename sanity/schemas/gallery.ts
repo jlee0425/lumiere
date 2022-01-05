@@ -1,7 +1,7 @@
 export default {
 	name: 'gallery',
-	type: 'object',
 	title: 'Gallery',
+	type: 'object',
 	fields: [
 		{
 			name: 'images',
@@ -27,26 +27,6 @@ export default {
 			options: {
 				layout: 'grid',
 			},
-		},
-		{
-			name: 'display',
-			type: 'string',
-			title: 'Display as',
-			description: 'How should we display these images?',
-			options: {
-				list: [
-					{ title: 'Stacked on top of eachother', value: 'stacked' },
-					{ title: 'In-line', value: 'inline' },
-					{ title: 'Carousel', value: 'carousel' },
-				],
-				layout: 'radio', // <-- defaults to 'dropdown'
-			},
-		},
-		{
-			name: 'zoom',
-			type: 'boolean',
-			title: 'Zoom enabled',
-			description: 'Should we enable zooming of images?',
 		},
 	],
 	preview: {

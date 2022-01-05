@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^2.23.2",
     "next": "12.0.7",
     "next-sanity": "^0.4.0",
     "react": "17.0.2",

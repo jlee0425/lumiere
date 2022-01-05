@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<header className="flex md:flex-col items-center justify-between">
 			<img
-				className="w-auto h-20 md:h-48"
+				className="w-auto h-20 md:h-48 cursor-pointer"
 				src="/lumiere_logo_transparent.png"
 				alt="Lumiere Logo"
 			/>
