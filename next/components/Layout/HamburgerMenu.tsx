@@ -22,24 +22,24 @@ const HamburgerMenu = ({ onClose }: Props) => {
 					className={`h-[5%] w-2/5 bg-eggshell-700 rounded-xl -rotate-45 -translate-y-1`}
 				/>
 			</div>
-			<span className="absolute text-[#f0f0d6] top-1/2 -left-60 font-extrabold tracking-widest text-9xl transform rotate-90 opacity-40">
+			<span className="absolute text-[#f0f0d6] top-1/2 -left-60 font-extrabold tracking-widest text-9xl transform rotate-90 opacity-80 animate-pulse">
 				LUMIERE
 			</span>
 			<ul className="flex flex-col w-full h-full justify-center align-center gap-14 text-[#fbf9f3] font-bold">
 				{NAV_MENU.map(({ title, to }) => (
-					<li key="to" className="w-full text-center text-5xl">
+					<li key="to" className="w-full text-center text-5xl drop-shadow-md">
 						<Link href={to}>{title}</Link>
 					</li>
 				))}
 				<div className="flex flex-row justify-center align-center gap-8">
 					<li>
 						<Link href={'https://www.instagram.com/youn_changmin'} passHref>
-							<FiInstagram className="w-14 h-auto" />
+							<FiInstagram className="w-14 h-auto drop-shadow-md" />
 						</Link>
 					</li>
 					<li>
 						<Link href={'https://pf.kakao.com/_gReExb'} passHref>
-							<RiKakaoTalkLine className="w-14 h-auto" />
+							<RiKakaoTalkLine className="w-14 h-auto drop-shadow-md" />
 						</Link>
 					</li>
 				</div>

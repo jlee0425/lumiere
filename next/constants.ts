@@ -1,7 +1,3 @@
-import { GoHome } from 'react-icons/go';
-import { GrGallery } from 'react-icons/gr';
-import { BsCamera } from 'react-icons/bs';
-import { FiInstagram } from 'react-icons/Fi';
 import { RiKakaoTalkLine } from 'react-icons/Ri';
 
 export const NAV_MENU = [
