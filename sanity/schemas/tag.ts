@@ -4,6 +4,6 @@ export default {
 	type: 'document',
 	fields: [
 		{ name: 'tag', type: 'string' },
-		{ name: 'slug', type: 'slug' },
+		{ name: 'slug', type: 'slug', options: { source: 'title' } },
 	],
 };
