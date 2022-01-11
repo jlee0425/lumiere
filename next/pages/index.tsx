@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
-import HamburgerMenu from '../components/Layout/HamburgerMenu';
+import { usePhotos } from '../hooks/usePhotos';
 
 const Home: NextPage = () => {
+	const data = usePhotos();
 	return <div />;
 };
 

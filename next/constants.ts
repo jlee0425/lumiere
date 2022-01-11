@@ -1,4 +1,6 @@
-import { RiKakaoTalkLine } from 'react-icons/Ri';
+import { RiKakaoTalkLine } from 'react-icons/ri';
+
+export const endpoint = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v1/graphql/${process.env.NEXT_PUBLIC_SANITY_DATASET}/default`;
 
 export const NAV_MENU = [
 	{
