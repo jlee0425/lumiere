@@ -1,11 +1,16 @@
 export default {
 	name: 'post',
-	title: 'Post',
+	title: '포스트',
 	type: 'document',
 	fields: [
-		{ name: 'title', type: 'string' },
-		{ name: 'slug', type: 'slug', options: { source: 'title' } },
-		{ name: 'content', type: 'text' },
-		{ name: 'images', title: 'Images', type: 'array', of: [{ type: 'image' }] },
+		{ name: 'title', title: '제목', type: 'string' },
+		{
+			name: 'slug',
+			type: 'slug',
+			description: '신경안써도 됨.',
+			options: { source: 'title' },
+		},
+		{ name: 'content', title: '내용', type: 'text' },
+		{ name: 'images', title: '이미지', type: 'array', of: [{ type: 'image' }] },
 	],
 };
