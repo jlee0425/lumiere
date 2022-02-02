@@ -1,6 +1,8 @@
 import { RiKakaoTalkLine } from 'react-icons/ri';
 
 export const endpoint = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v1/graphql/${process.env.NEXT_PUBLIC_SANITY_DATASET}/default`;
+export const INSTA_LINK = 'https://www.instagram.com/youn_changmin';
+export const KATALK_LINK = 'https://pf.kakao.com/_gReExb';
 
 export const NAV_MENU = [
 	{

@@ -16,7 +16,7 @@ const Header = () => {
 				{NAV_MENU.map(({ title, to }) => (
 					<li
 						key={to}
-						className="underline decoration-eggshell-400 cursor-pointer text-gray-700 drop-shadow-xl hover:decoration-eggshell-700 underline-offset-4"
+						className="underline cursor-pointer text-gray-700 drop-shadow-xl decoration-eggshell-400 hover:decoration-eggshell-700 underline-offset-4"
 					>
 						<Link href={to} passHref>
 							<span>{title}</span>

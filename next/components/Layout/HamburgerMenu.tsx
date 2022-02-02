@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FiInstagram } from 'react-icons/fi';
 import { RiKakaoTalkLine } from 'react-icons/ri';
-import { NAV_MENU } from '../../constants';
+import { INSTA_LINK, KATALK_LINK, NAV_MENU } from '../../constants';
 
 interface Props {
 	onClose?: () => void;
@@ -33,12 +33,12 @@ const HamburgerMenu = ({ onClose }: Props) => {
 				))}
 				<div className="flex flex-row justify-center align-center gap-8">
 					<li>
-						<Link href={'https://www.instagram.com/youn_changmin'} passHref>
+						<Link href={INSTA_LINK} passHref>
 							<FiInstagram className="w-14 h-auto drop-shadow-md" />
 						</Link>
 					</li>
 					<li>
-						<Link href={'https://pf.kakao.com/_gReExb'} passHref>
+						<Link href={KATALK_LINK} passHref>
 							<RiKakaoTalkLine className="w-14 h-auto drop-shadow-md" />
 						</Link>
 					</li>
