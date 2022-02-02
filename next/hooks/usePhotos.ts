@@ -9,10 +9,19 @@ export const usePhotos = (tags?: string[]) => {
 			gql`
 				query {
 					allPhoto {
-						photo
 						title
-						slug
-						tag
+						desc
+						photo {
+							asset {
+								url
+							}
+						}
+						slug {
+							current
+						}
+						tag {
+							tag
+						}
 					}
 				}
 			`

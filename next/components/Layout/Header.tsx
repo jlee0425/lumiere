@@ -12,10 +12,15 @@ const Header = () => {
 				src="/lumiere_logo_transparent.png"
 				alt="Lumiere Logo"
 			/>
-			<nav className="hidden md:flex items-center justify-evenly text-xl w-screen">
+			<nav className="hidden md:flex items-center justify-evenly text-xl w-screen ">
 				{NAV_MENU.map(({ title, to }) => (
-					<li key="to">
-						<Link href={to}>{title}</Link>
+					<li
+						key={to}
+						className="underline decoration-eggshell-400 cursor-pointer text-gray-700 drop-shadow-xl hover:decoration-eggshell-700 underline-offset-4"
+					>
+						<Link href={to} passHref>
+							<span>{title}</span>
+						</Link>
 					</li>
 				))}
 			</nav>
