@@ -1,32 +1,14 @@
 export default {
 	name: 'gallery',
-	title: 'Gallery',
-	type: 'object',
+	title: '갤러리',
+	type: 'document',
 	fields: [
+		{ name: 'title', title: '제목', type: 'string' },
+		{ name: 'slug', title: 'slug', type: 'slug' },
 		{
 			name: 'images',
-			type: 'array',
-			title: 'Images',
-			of: [
-				{
-					name: 'image',
-					type: 'image',
-					title: 'Image',
-					options: {
-						hotspot: true,
-					},
-					fields: [
-						{
-							name: 'alt',
-							type: 'string',
-							title: 'Alternative text',
-						},
-					],
-				},
-			],
-			options: {
-				layout: 'grid',
-			},
+			type: 'images',
+			title: '사진첩',
 		},
 	],
 	preview: {
@@ -39,7 +21,6 @@ export default {
 
 			return {
 				title: `Gallery block of ${Object.keys(images).length} images`,
-				subtitle: `Alt text: ${image.alt}`,
 				media: image,
 			};
 		},
