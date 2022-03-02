@@ -8,7 +8,7 @@ const index = ({ children }: { children: ReactNode }) => {
 		<>
 			<SEO />
 			<Header />
-			<main className="max-w-5xl mx-auto py-5 px-2 pb-28 md:py-10 md:pb-20">
+			<main className="h-full max-w-5xl mx-auto py-5 px-2 pb-28 md:py-10 md:pb-20">
 				{children}
 			</main>
 			<Footer />
