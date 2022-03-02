@@ -11,7 +11,7 @@ interface Props {
 const HamburgerMenu = ({ onClose }: Props) => {
 	return (
 		<nav
-			className={`absolute top-0 left-0 w-screen h-screen p-10 flex flex-col bg-[#e2d7b1] md:hidden`}
+			className={`absolute top-0 left-0 w-screen h-screen p-10 flex flex-col bg-[#e2d7b1] md:hidden z-10`}
 			onClick={onClose}
 		>
 			<div className="absolute top-5 right-0 flex flex-col items-center  space-y-3 md:hidden h-20 w-16 cursor-pointer">
