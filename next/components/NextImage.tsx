@@ -10,7 +10,7 @@ interface Props {
 
 const NextImage = ({ src, w, h, alt }: Props) => {
 	return (
-		<div className={`relative w-[${w}rem] h-[${h}rem]`}>
+		<div className={`relative`} style={{ width: `${w}rem`, height: `${h}rem` }}>
 			<Image src={src} layout="fill" alt={alt} />
 		</div>
 	);
