@@ -11,7 +11,7 @@ export const NAV_MENU = [
 	},
 	{
 		title: 'GALLERY',
-		to: '/gallery',
+		to: '/gallery/side-projects',
 	},
 	{
 		title: 'PRODUCT',
