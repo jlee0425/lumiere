@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
@@ -16,6 +18,7 @@ module.exports = {
 				'eggshell-700': '#c1a855',
 			},
 		},
+		...defaultTheme,
 	},
 	plugins: [],
 };
