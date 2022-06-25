@@ -13,14 +13,14 @@ export default {
 	],
 	preview: {
 		select: {
-			images: 'images',
+			title: 'title',
 			image: 'images.0',
 		},
-		prepare(selection: { images: any; image: any }) {
-			const { images, image } = selection;
+		prepare(selection: { title: string; image: any }) {
+			const { title, image } = selection;
 
 			return {
-				title: `Gallery block of ${Object.keys(images).length} images`,
+				title,
 				media: image,
 			};
 		},
