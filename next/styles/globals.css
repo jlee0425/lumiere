@@ -21,6 +21,10 @@ a {
 	list-style-type: none;
 }
 
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: darkgrey;
+}
+
 @font-face {
 	font-family: 'RockwellNova';
 	src: url("../public/font/RockwellNova.ttf");
