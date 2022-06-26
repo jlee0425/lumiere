@@ -5,7 +5,7 @@ import Step from './Step';
 
 const Process = () => {
 	return (
-		<article className="p-3">
+		<article className="p-6">
 			{STEPS.map(({ title, content }, idx) => (
 				<Step key={idx} step={idx + 1} title={title}>
 					{content}

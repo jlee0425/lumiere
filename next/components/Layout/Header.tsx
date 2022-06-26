@@ -16,7 +16,7 @@ const Header = ({ isHome }: { isHome: boolean }) => {
 			) : (
 				<CloseButton onClose={handleClose} />
 			)}
-			<BurgerMenu isOpen={isOpen} onOpen={handleOpen} onClose={handleClose} />
+			<BurgerMenu isOpen={isOpen} onClose={handleClose} />
 		</header>
 	);
 };
