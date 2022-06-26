@@ -26,6 +26,13 @@ a {
 	background: darkgrey;
 }
 
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bm-menu-wrap {
+	width: 100vw !important;
+}
 @font-face {
 	font-family: 'RockwellNova';
 	src: url('../public/font/RockwellNova.ttf');
