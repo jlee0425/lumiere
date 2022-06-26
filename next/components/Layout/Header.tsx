@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 
 const Header = ({ isHome }: { isHome: boolean }) => {
@@ -37,7 +36,7 @@ const HomeHeader = ({
 			}`}
 		>
 			<Link href="/" passHref>
-				<a className="text-eggshell-200 text-2xl">Lumière</a>
+				<a className="text-eggshell-200 text-2xl">Lumière Snap</a>
 			</Link>
 			<div className="flex flex-col space-y-1 cursor-pointer" onClick={onOpen}>
 				<div className={`h-1 w-6 bg-eggshell-200 rounded-md`} />

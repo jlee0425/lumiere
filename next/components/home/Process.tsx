@@ -5,7 +5,7 @@ import Step from './Step';
 
 const Process = () => {
 	return (
-		<article className="p-6">
+		<article className="py-6 px-5 scrollbar-hide overflow-scroll">
 			{STEPS.map(({ title, content }, idx) => (
 				<Step key={idx} step={idx + 1} title={title}>
 					{content}

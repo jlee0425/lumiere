@@ -17,15 +17,17 @@ const BurgerMenu = ({ isOpen, onClose }: Props) => {
 		},
 		[onClose, router]
 	);
+
 	return (
 		<Menu
 			outerContainerId="outer-container"
 			pageWrapId="page-wrap"
 			isOpen={isOpen}
 			onClose={onClose}
-			className="w-[100vw] h-full p-5"
+			className="w-[100vw] h-full px-5 py-4"
 			customBurgerIcon={false}
 			customCrossIcon={false}
+			disableAutoFocus
 		>
 			<span className="absolute text-eggshell-700 top-2/3 -left-44 font-extrabold tracking-widest text-8xl transform rotate-90 opacity-20 -z-[1]">
 				Lumière
@@ -53,7 +55,7 @@ const BurgerMenu = ({ isOpen, onClose }: Props) => {
 				</li>
 				<ul className="flex flex-col space-y-2 mt-1">
 					{INSTA_MENU.map(({ url, title }, idx) => (
-						<li key={`header-sub-link-${title}`}>
+						<li key={`header-sub-link-${title}`} className="mt-1">
 							<a href={url} target="_blank" rel="noreferrer">
 								<span
 									className={`text-xl text-eggshell-200 cursor-pointer ${
@@ -75,7 +77,7 @@ const BurgerMenu = ({ isOpen, onClose }: Props) => {
 						className="pt-4"
 					>
 						<span className={`text-2xl text-eggshell-200 cursor-pointer`}>
-							Contanct
+							Contact
 						</span>
 					</a>
 				</li>
@@ -94,7 +96,7 @@ const GalleryMenu = ({
 	return (
 		<li>
 			<span className="text-2xl text-eggshell-200 cursor-pointer">Gallery</span>
-			<ul className={`flex flex-col pl-4`}>
+			<ul className={`flex flex-col pl-4 mt-1`}>
 				{GALLERY_SUB_MENU.map(({ url, title }, idx) =>
 					idx === 0 ? (
 						<div className="flex flex-col">
@@ -104,7 +106,7 @@ const GalleryMenu = ({
 								isFirst
 								onClick={handleClick(url)}
 							/>
-							<ul className={`flex flex-col pl-8`}>
+							<ul className={`flex flex-col pl-8 mt-1`}>
 								{PARIS_SUB_MENU.map(({ title, url }, idx) => (
 									<MenuLink
 										key={`paris-menu-${title}`}
@@ -113,6 +115,7 @@ const GalleryMenu = ({
 										isFirst={idx === 0}
 										twStyles={idx > 0 ? 'pl-6' : ''}
 										onClick={handleClick(url)}
+										mt={1}
 									/>
 								))}
 							</ul>

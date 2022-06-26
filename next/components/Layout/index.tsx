@@ -10,10 +10,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
 			<SEO />
-			<div>
+			<div className="scrollbar-hide overflow-scroll">
 				<Header isHome={isHome} />
 				<main
-					className={`h-screen w-screen ${isHome ? '' : 'pt-16'}`}
+					className={`h-screen w-screen ${
+						isHome ? '' : 'pt-16'
+					} scrollbar-hide overflow-scroll`}
 					id="page-wrap"
 				>
 					{children}
