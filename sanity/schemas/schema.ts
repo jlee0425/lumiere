@@ -4,7 +4,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import createSchema from 'part:@sanity/base/schema-creator';
 import gallery from './gallery';
 import images from './images';
-import imageWithLink from './imageWithLink';
 import post from './post';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -13,5 +12,5 @@ export default createSchema({
 	name: 'default',
 	// Then proceed to concatenate our document type
 	// to the ones provided by any plugins that are installed
-	types: schemaTypes.concat([post, gallery, images, imageWithLink]),
+	types: schemaTypes.concat([post, gallery, images]),
 });
