@@ -6,9 +6,10 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, RockwellNova, Apple SD Neo, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: -apple-system, RockwellNova, Apple SD Neo, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	background: #fff;
+	letter-spacing: 1px;
 }
 
 a {
@@ -27,12 +28,12 @@ a {
 
 @font-face {
 	font-family: 'RockwellNova';
-	src: url("../public/font/RockwellNova.ttf");
+	src: url('../public/font/RockwellNova.ttf');
 }
 
 @font-face {
 	font-family: 'Apple SD Neo';
-	src: url("../public/font/AppleSDGothicNeoM.ttf")
+	src: url('../public/font/AppleSDGothicNeoM.ttf');
 }
 @layer components {
 	.divider {

@@ -7,11 +7,13 @@ const index = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
 			<SEO />
-			<Header />
-			<main className="h-full max-w-5xl mx-auto py-5 px-2 pb-28 md:py-10 md:pb-20">
-				{children}
-			</main>
-			<Footer />
+			<div>
+				<Header />
+				<main className="h-screen w-screen" id="page-wrap">
+					{children}
+				</main>
+				<Footer />
+			</div>
 		</>
 	);
 };
