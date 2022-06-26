@@ -1,26 +1,41 @@
 import Link from 'next/link';
-import useToggle from '../../lib/hooks/useToggle';
+import { useRouter } from 'next/router';
+import { useCallback, useMemo, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 
-const Header = () => {
-	const [isOpen, toggleOpen] = useToggle();
+const Header = ({ isHome }: { isHome: boolean }) => {
+	const [isOpen, setOpen] = useState(false);
+
+	const handleOpen = useCallback(() => setOpen(true), []);
+	const handleClose = useCallback(() => setOpen(false), []);
+
 	return (
-		<header>
+		<header className={``}>
 			{!isOpen ? (
-				<HomeHeader onOpen={toggleOpen} />
+				<HomeHeader onOpen={handleOpen} isHome={isHome} />
 			) : (
-				<CloseButton onClose={toggleOpen} />
+				<CloseButton onClose={handleClose} />
 			)}
-			<BurgerMenu isOpen={isOpen} onClose={toggleOpen} />
+			<BurgerMenu isOpen={isOpen} onOpen={handleOpen} onClose={handleClose} />
 		</header>
 	);
 };
 
 export default Header;
 
-const HomeHeader = ({ onOpen }: { onOpen: () => void }) => {
+const HomeHeader = ({
+	onOpen,
+	isHome,
+}: {
+	onOpen: () => void;
+	isHome: boolean;
+}) => {
 	return (
-		<div className="fixed top-0 left-0 flex justify-between items-center w-full px-5 py-4 z-10">
+		<div
+			className={`fixed top-0 left-0 flex justify-between items-center w-full px-5 py-4 z-10 ${
+				!isHome && 'bg-black'
+			}`}
+		>
 			<Link href="/" passHref>
 				<a className="text-eggshell-200 text-2xl">Lumière</a>
 			</Link>
