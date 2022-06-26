@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ImageProps } from '../../pages';
-import Image from 'next/image'
+import Image from 'next/image';
 
 type Props = {
 	images: ImageProps[];
@@ -20,7 +20,9 @@ const MainSwiper = ({ images }: Props) => {
 			preloadImages
 			modules={[EffectFade, Pagination, Autoplay]}
 			loop
-			autoplay
+			autoplay={{
+				delay: 10000,
+			}}
 		>
 			{images.map((image) => (
 				<SwiperSlide key={image.key}>

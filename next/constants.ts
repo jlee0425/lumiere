@@ -7,11 +7,11 @@ export const KATALK_LINK = 'https://pf.kakao.com/_gReExb';
 export const NAV_MENU = [
 	{
 		title: 'HOME',
-		to: '/home',
+		to: '/',
 	},
 	{
 		title: 'GALLERY',
-		to: '/gallery/side-projects',
+		to: '/gallery?path=jeju',
 	},
 	{
 		title: 'PRODUCT',

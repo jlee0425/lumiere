@@ -29,3 +29,23 @@ query ($slug: String!) {
   }
 }
 `;
+
+export const GET_LANDING_IMAGES = `
+query {
+  allGallery(where: {slug: {current: {eq: "landing-images"}}}) {
+    images {
+      _key
+      asset {
+        url
+        metadata {
+          dimensions {
+            aspectRatio
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+}
+`;

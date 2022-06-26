@@ -1,3 +1,6 @@
-import { atom } from 'jotai';
+import { atom } from 'recoil';
 
-export const burgerState = atom(false);
+export const burgerState = atom({
+	key: 'burgerState',
+	default: false,
+});

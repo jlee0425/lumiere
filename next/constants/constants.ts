@@ -1,12 +1,5 @@
 export const GALLERY_LIST = [
 	{
-		_id: '10437173-ac5c-48ae-aa8c-fe715d4cba08',
-		slug: {
-			current: 'side-projects',
-		},
-		title: '개인작업',
-	},
-	{
 		_id: '715afeaf-6956-4155-8582-fb308ffdc753',
 		slug: {
 			current: 'jeju',
@@ -19,5 +12,12 @@ export const GALLERY_LIST = [
 			current: 'paris',
 		},
 		title: '파리',
+	},
+	{
+		_id: '10437173-ac5c-48ae-aa8c-fe715d4cba08',
+		slug: {
+			current: 'side-projects',
+		},
+		title: '개인작업',
 	},
 ];
