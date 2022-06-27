@@ -16,7 +16,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 	const images = data.data.allGallery[0].images.map(
 		({ _key, asset }: SanityImage) => ({
 			key: _key,
-			url: asset.url,
+			url: `${asset.url}?w=375`,
 			isPortrait: asset.metadata.dimensions.aspectRatio <= 1,
 			width: asset.metadata.dimensions.width,
 			height: asset.metadata.dimensions.height,
@@ -30,18 +30,21 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 	};
 };
 
+// const getHeight = (height: number, isPortait: boolean) =>
+// 	isPortait ? `h-[${height / 2}px]` : `h-[${height / 5}px]`;
 const GalleryPage = ({ images }: { images: GalleryImage[] }) => {
 	return (
 		<div className="w-full">
 			<Masonry
 				className="flex w-full space-x-2 p-2"
 				columnClassName="space-y-2"
+				breakpointCols={{ default: 3, 768: 2 }}
 			>
-				{images.map(({ key, url, isPortrait }) => (
+				{images.map(({ key, url, height, isPortrait }) => (
 					<div
 						key={key}
 						className={`w-full ${
-							isPortrait ? 'h-[280px]' : 'h-[140px]'
+							isPortrait ? 'h-[256px]' : 'h-[128px]'
 						} relative`}
 					>
 						<Image
@@ -50,6 +53,7 @@ const GalleryPage = ({ images }: { images: GalleryImage[] }) => {
 							onContextMenu={(e) => e.preventDefault()}
 							objectFit="cover"
 							layout="fill"
+							loading="eager"
 						/>
 					</div>
 				))}
