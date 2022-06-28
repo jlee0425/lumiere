@@ -1,31 +1,31 @@
 {
-	"name": "lumiere",
-	"private": true,
-	"version": "1.0.0",
-	"description": "",
-	"main": "package.json",
-	"author": "Jeongkyu Lee(Jake) <jake.jklee425@gmail.com>",
-	"license": "UNLICENSED",
-	"scripts": {
-		"start": "sanity start",
-		"build": "sanity build",
-		"gql": "sanity graphql deploy"
-	},
-	"keywords": [
-		"sanity"
-	],
-	"dependencies": {
-		"@sanity/base": "^2.23.2",
-		"@sanity/core": "^2.23.2",
-		"@sanity/default-layout": "^2.23.2",
-		"@sanity/default-login": "^2.23.2",
-		"@sanity/desk-tool": "^2.23.2",
-		"@sanity/production-preview": "^2.15.0",
-		"@sanity/vision": "^2.23.2",
-		"prop-types": "^15.7",
-		"react": "^17.0",
-		"react-dom": "^17.0",
-		"styled-components": "^5.2.0"
-	},
-	"packageManager": "yarn@3.2.1"
+  "name": "lumiere",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Jeongkyu Lee(Jake) <jake.jklee425@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
+    "gql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "2.24.3-pte.128",
+    "@sanity/core": "2.24.3-pte.128",
+    "@sanity/default-layout": "2.24.3-pte.128",
+    "@sanity/default-login": "2.24.3-pte.128",
+    "@sanity/desk-tool": "2.24.3-pte.128",
+    "@sanity/production-preview": "2.24.3-pte.128",
+    "@sanity/vision": "2.24.3-pte.128",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  },
+  "packageManager": "yarn@3.2.1"
 }
