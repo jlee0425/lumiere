@@ -25,6 +25,12 @@ a {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background: darkgrey;
 }
+.swiper-button-next:after {
+	color: whitesmoke;
+}
+.swiper-button-prev:after {
+	color: whitesmoke;
+}
 
 .bm-overlay {
 	background: rgba(0, 0, 0, 0.8) !important;
@@ -33,6 +39,7 @@ a {
 .bm-menu-wrap {
 	width: 100vw !important;
 }
+
 @font-face {
 	font-family: 'RockwellNova';
 	src: url('../public/font/RockwellNova.ttf');

@@ -99,7 +99,7 @@ const GalleryMenu = ({
 			<ul className={`flex flex-col pl-4 mt-1`}>
 				{GALLERY_SUB_MENU.map(({ url, title }, idx) =>
 					idx === 0 ? (
-						<div className="flex flex-col">
+						<div className="flex flex-col" key={`gallery-menu-${title}`}>
 							<MenuLink
 								title={title}
 								size="sm"
@@ -122,6 +122,7 @@ const GalleryMenu = ({
 						</div>
 					) : (
 						<MenuLink
+							key={`gallery-menu-${title}`}
 							title={title}
 							onClick={handleClick(url)}
 							size="sm"

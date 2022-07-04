@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { ReactNode, useMemo } from 'react';
+import ReactModal from 'react-modal';
 import Header from './Header';
 import SEO from './SEO';
 
@@ -20,10 +21,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
 				>
 					{children}
 				</main>
-				{/* <Footer /> */}
 			</div>
 		</>
 	);
 };
+
+ReactModal.setAppElement('#__next');
 
 export default Layout;
